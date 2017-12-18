@@ -1,4 +1,4 @@
-#include <iostream>
+##include <iostream>
 #include <sstream>
 using namespace std;
 
@@ -16,13 +16,16 @@ bool read( int mas[10])
  } 
 
 int main()
-{   int k =0; int mas[10];
+{   int k =0,c =0; int mas[10];
     
 if (read(mas)){
-  for (int i =0; i<10;i++){
-   for (int j =0; j<10;j++){
-   if ((i < j) && (mas[i] > mas[j])) k++;
+  for (int j =0; j<10;j++){
+   for (int i =0; i<j ;i++){
+    if (mas[i] > mas[j]) k++;
+   
 }}
-    cout << k;} else cout <<"An error has occurred while reading numbers";
+    cout << k<< "\n";
+
+} else cout <<"An error has occurred while reading numbers";
    return 0;
 }
